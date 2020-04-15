@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'style.css' %}" type="text/css">
+</head>
+<body>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="{% url 'products:product' %}">Products</a></li>
+                            <li><a href="{% url 'services:service' %}">Services</a></li>
+                        </ul>
+                    </nav>
+
+    <h3>
+        "Hello!, Welcome to Xanku Hub!!, <br>The city of FUN people!!!."
+    </h3>
+    
+    <ul>
+        <li><a href="{% url 'xanku:item_name' %}">Click to view items with price</a></li>
+        <li><a href="{% url 'xanku:item_description' %}">Click to view items with decriptions</a></li>
+        <li><a href="{% url 'xanku:item_owner' %}">Click to view items owner details</a></li>
+        <li><a href="{% url 'xanku:owner_contact' %}">Click to view items contacts</a></li>
+    </ul>
+    
+    
+        
+
+
+</body>
+</html>
+
+{% endblock %}

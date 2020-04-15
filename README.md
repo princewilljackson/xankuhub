@@ -1,0 +1,1 @@
+This web app is a demonstration of how database objects(datas) are fetched and displayed on an html file.
